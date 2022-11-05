@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { DataContext } from "../context/DataContext";
 
 export const SearchInput = () => {
-
+  const {results, setResults} = useContext(DataContext);
   const [search, setSearch] = useState('');
-  const [results, setResults] = useState([]);
 
   const handleSearch = (e) =>{
     e.preventDefault();
