@@ -1,6 +1,11 @@
-const BookCard = () => {
+
+const BookCard = (book) => {
+  
   return (
-    <div>BookCard</div>
+    <div>
+      Name: {book.title}
+      Author: {book.author_name[0]}
+    </div>
   )
 }
 

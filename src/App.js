@@ -1,16 +1,18 @@
+import { useContext } from 'react';
 import './App.css';
+import BookCard from './components/BookCard';
 import { SearchInput } from './components/SearchInput';
-import { DataProvider } from './context/DataContext';
+import { DataContext } from './context/DataContext';
 
 function App() {
-  
+
+  const {results} = useContext(DataContext);
   return (
-    <DataProvider>
+    
       <div className="App">
         <SearchInput />
+        {/* {results.docs ? <BookCard book={results.docs[0]} /> : null} */}
       </div>
-    </DataProvider>
-    
   );
 }
 
