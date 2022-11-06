@@ -1,8 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { DataContext } from "../context/DataContext";
+import BookCard from "./BookCard";
 
 export const SearchInput = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('diana+uribe');
   const [term, setTerm] = useState('');
   const {results, setResults} = useContext(DataContext);
 
@@ -16,24 +17,25 @@ export const SearchInput = () => {
     setSearch(term);
   } 
 
-  const fetchedData = async () => {
-    try{
-      await fetch(`http://openlibrary.org/search.json?q=${search}`)
-        .then(res => res.json())
-        .then(json => setResults(json));
-      console.log([results])
-    } catch (error){
-      console.error(error);
+  useEffect(() => {
+    const fetchedData = async () => {
+      try{
+        await fetch(`http://openlibrary.org/search.json?q=${search}`)
+          .then(res => res.json())
+          .then(json => setResults(json));
+        
+      } catch (error){
+        console.error(error);
+      }
     }
-  }
-
-  useEffect(() => fetchedData, [search]);
+    fetchedData();
+  }, [search]);
 
   return (
     <div>
       <form onSubmit={handleForm}>
-        <input onChange={handleSearchInput} type="text"></input>
-        <button type="submit">Search</button>
+        <input onChange={handleSearchInput} type="text" placeholder="E.g. Diana Uribe"></input>
+        <button type="submit" >Search</button>
       </form>
     </div>
   )

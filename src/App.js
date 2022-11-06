@@ -11,7 +11,13 @@ function App() {
     
       <div className="App">
         <SearchInput />
-        {/* {results.docs ? <BookCard book={results.docs[0]} /> : null} */}
+        <ul>
+        {results.docs 
+          ? results.docs.map((book) => (
+            <li key={book.key}> <BookCard book={book} /> </li>
+          ))         
+          : null}
+      </ul>
       </div>
   );
 }
