@@ -3,28 +3,37 @@ import { DataContext } from "../context/DataContext";
 
 export const SearchInput = () => {
   const [search, setSearch] = useState('');
+  const [term, setTerm] = useState('');
   const {results, setResults} = useContext(DataContext);
 
-  const handleSearch = (e) =>{
-    e.preventDefault();
-    setSearch(e.target.value.toLowerCase().replaceAll(' ', '+'))
-    console.log(search);
+  const handleSearchInput = (e) =>{
+    setTerm(e.target.value.toLowerCase().replaceAll(' ', '+'));
+    console.log(term);
   }
 
-  async function fetchedData (){
-      await fetch(`http://openlibrary.org/search.json?q=${search}`)
-      .then(res => res.json())
-      .then(json => setResults(json))
-      console.log(results.docs)
-}
+  const handleForm = (e) => {
+    e.preventDefault();
+    setSearch(term);
+  } 
 
-  useEffect(() => fetchedData, [search] );
+  const fetchedData = async () => {
+    try{
+      await fetch(`http://openlibrary.org/search.json?q=${search}`)
+        .then(res => res.json())
+        .then(json => setResults(json));
+      console.log([results])
+    } catch (error){
+      console.error(error);
+    }
+  }
+
+  useEffect(() => fetchedData, [search]);
 
   return (
     <div>
-      <form onChange={handleSearch}>
-        <input type="text"></input>
-        {/* <button type="submit">Search</button> */}
+      <form onSubmit={handleForm}>
+        <input onChange={handleSearchInput} type="text"></input>
+        <button type="submit">Search</button>
       </form>
     </div>
   )
