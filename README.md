@@ -4,18 +4,29 @@ This is a simple and fantastic app that allows you to find relevant information 
 
 Deploy: 
 
+git clone https://github.com/JuanGalvez27/swapps-technical-test-api-usage
+
+## Project desired.
+
+
 
 
 ## Runnign the project.
 
-- 1) Create a folder on your pc and start 
+1) Create a folder on your pc and start a bash console in that directory.
 
-In the project directory, you can run:
+2) Run the following command on the bash:
+git clone https://github.com/JuanGalvez27/swapps-technical-test-api-usage
+(make sure you have installed GIT)
 
-### `npm start`
+3) Run the following command:
+  cd ./swapps-technical-test-api-usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4) Run: npm install
+(make sure you have installed node)
+  Wait for the packages instalation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5) Run: npm start (make sure the port 3000 its free)
+
+¡Have Fun!
+
