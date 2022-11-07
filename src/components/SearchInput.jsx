@@ -1,15 +1,34 @@
-import { useContext, useEffect, useState } from "react";
-import { DataContext } from "../context/DataContext";
-import BookCard from "./BookCard";
+import { useState } from "react";
+import useFetchData from "../hooks/useFetchData";
+
+
+/**
+ * 1. Mount
+ * 2. cilo de vida
+ * 3. rerenders
+ * 4. unmount
+ */
+/**
+ * TODO: 
+ * ESLint
+ * Prettier
+ */
 
 export const SearchInput = () => {
   const [search, setSearch] = useState('diana+uribe');
   const [term, setTerm] = useState('');
-  const {results, setResults} = useContext(DataContext);
+
+/**
+ * Custom hook to fetch data
+ */
+  useFetchData({ search });
+
+  // ----
+  // methods
+  // ----
 
   const handleSearchInput = (e) =>{
     setTerm(e.target.value.toLowerCase().replaceAll(' ', '+'));
-    console.log(term);
   }
 
   const handleForm = (e) => {
@@ -17,19 +36,13 @@ export const SearchInput = () => {
     setSearch(term);
   } 
 
-  useEffect(() => {
-    const fetchedData = async () => {
-      try{
-        await fetch(`http://openlibrary.org/search.json?q=${search}`)
-          .then(res => res.json())
-          .then(json => setResults(json));
-        
-      } catch (error){
-        console.error(error);
-      }
-    }
-    fetchedData();
-  }, [search]);
+  // ----
+  // lifecycle
+  // ----
+
+  // ----
+  // view
+  // ----
 
   return (
     <div>
