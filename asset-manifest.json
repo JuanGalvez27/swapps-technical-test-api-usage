@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/swapps-technical-test-api-usage/static/css/main.4998a4d0.css",
+    "main.js": "/swapps-technical-test-api-usage/static/js/main.e74d800a.js",
+    "index.html": "/swapps-technical-test-api-usage/index.html",
+    "main.4998a4d0.css.map": "/swapps-technical-test-api-usage/static/css/main.4998a4d0.css.map",
+    "main.e74d800a.js.map": "/swapps-technical-test-api-usage/static/js/main.e74d800a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4998a4d0.css",
+    "static/js/main.e74d800a.js"
+  ]
+}
