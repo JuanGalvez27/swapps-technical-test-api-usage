@@ -28,8 +28,8 @@ function Main() {
           <div className=''>
             <SearchInput />
           </div>
-          <div className='grid grid-cols-2 bg-yellow-700 items-center justify-center h-full rounded-xl w-10/12'>
-            <div>
+          <div className= ' bg-yellow-700 h-full rounded-xl w-10/12'>
+            <div className='container flex flex-wrap'>
               {data}
             </div>
           </div>

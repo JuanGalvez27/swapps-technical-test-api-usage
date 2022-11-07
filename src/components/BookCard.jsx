@@ -9,8 +9,8 @@ const BookCard = ({book}) => {
 
   return (
     <>
-      <div className="container m-2 w-72">
-        <div className="flex justify-center h-40 w-full bg-inherit">
+      <div className="container bg-yellow-500 m-2 w-72 h-96 rounded-2xl p-4">
+        <div className="flex justify-center h-40 w-full bg-inherit rounded-xl">
           <img src={src} alt="Book cover" loading="lazy" />
         </div>
         <div>Name: {title}</div> 
