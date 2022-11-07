@@ -4,12 +4,7 @@ This is a simple and fantastic app that allows you to find relevant information 
 
 Deploy: 
 
-git clone https://github.com/JuanGalvez27/swapps-technical-test-api-usage
-
-## Project desired.
-
-
-
+http://juanGalvez27.github.io/swapps-technical-test-api-usage
 
 ## Runnign the project.
 
