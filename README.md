@@ -6,22 +6,43 @@ Deploy:
 
 http://juanGalvez27.github.io/swapps-technical-test-api-usage
 
+## Folder architecture
+
+src
+|--components/
+|  |--BookCard.jsx
+|  |--Footer.jsx
+|  |--Main.jsx
+|  |--Navbar.jsx
+|  |--SearchInput.jsx
+|--context
+|  |--DataContext.js
+|--hooks
+|  |--useDataFetch.js
+|--App.js
+|--index.css
+|--index.js
+
 ## Runnign the project.
 
 1) Create a folder on your pc and start a bash console in that directory.
 
 2) Run the following command on the bash:
 git clone https://github.com/JuanGalvez27/swapps-technical-test-api-usage
+
 (make sure you have installed GIT)
 
 3) Run the following command:
   cd ./swapps-technical-test-api-usage
 
 4) Run: npm install
-(make sure you have installed node)
-  Wait for the packages instalation.
 
-5) Run: npm start (make sure the port 3000 its free)
+(make sure you have installed node)
+Wait for the packages instalation.
+
+5) Run: npm start 
+
+(make sure the port 3000 its free)
 
 ¡Have Fun!
 

@@ -5,6 +5,9 @@ import { DataContext } from '../context/DataContext.js';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
+/**
+ * main component of the app
+ */
 function Main() {
 
   const {results} = useContext(DataContext);

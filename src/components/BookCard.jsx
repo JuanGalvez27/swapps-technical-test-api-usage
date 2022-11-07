@@ -1,5 +1,9 @@
 const BookCard = ({book}) => {
   
+/**
+ * this component show the information of each book fetched
+ */
+
   /**
    * save the props on a external variable
    */
