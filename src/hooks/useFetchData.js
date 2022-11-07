@@ -1,6 +1,10 @@
 import { useContext, useEffect } from "react";
 import { DataContext } from '../context/DataContext.js'
 
+/**
+ *  hook create to fetch the data
+ */
+
 const useFetchData = ({ search }) => {      
 
     const { setResults } = useContext(DataContext);

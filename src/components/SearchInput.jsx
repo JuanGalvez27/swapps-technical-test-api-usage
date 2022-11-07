@@ -1,13 +1,6 @@
 import { useState } from "react";
 import useFetchData from "../hooks/useFetchData";
 
-
-/**
- * 1. Mount
- * 2. cilo de vida
- * 3. rerenders
- * 4. unmount
- */
 /**
  * TODO: 
  * ESLint
@@ -23,10 +16,9 @@ export const SearchInput = () => {
  */
   useFetchData({ search });
 
-  // ----
-  // methods
-  // ----
-
+/**
+ * handlers
+ */
   const handleSearchInput = (e) =>{
     setTerm(e.target.value.toLowerCase().replaceAll(' ', '+'));
   }
@@ -35,10 +27,6 @@ export const SearchInput = () => {
     e.preventDefault();
     setSearch(term);
   } 
-
-  // ----
-  // view
-  // ----
 
   return (
     <div className="bg-[url('https://assets.weforum.org/article/image/responsive_big_webp_hySrQhk9QgN45B-0z8PR0bd8ZRyDZ9LnvzPSGaIb91Q.webp')] flex  h-screen justify-center items-center w-screen">

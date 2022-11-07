@@ -1,6 +1,8 @@
 const BookCard = ({book}) => {
   
-  
+  /**
+   * save the props on a external variable
+   */
   const title = book.title;
   const author = book.author_name ? book.author_name[0]: null;
   const publishYear = book.publish_year ? book.publish_year[0] : null;
