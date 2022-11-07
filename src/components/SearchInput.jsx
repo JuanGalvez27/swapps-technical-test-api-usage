@@ -55,7 +55,7 @@ export const SearchInput = () => {
           />
           <button 
             type="submit" 
-            className="ml-5 py-2 bg-gray-500 px-5 rounded-2xl"
+            className="ml-5 py-2 bg-gray-500 px-5 rounded-2xl hover:bg-gray-800"
           >Search
           </button>
         </form>

@@ -1,5 +1,6 @@
 const BookCard = ({book}) => {
   
+  
   const title = book.title;
   const author = book.author_name ? book.author_name[0]: null;
   const publishYear = book.publish_year ? book.publish_year[0] : null;
@@ -13,10 +14,12 @@ const BookCard = ({book}) => {
         <div className="flex justify-center h-40 w-full bg-inherit rounded-xl">
           <img src={src} alt="Book cover" loading="lazy" />
         </div>
-        <div>Name: {title}</div> 
-        <div>Author: {author}</div>
-        <div>Publish Year: {publishYear}</div>
-        <div>ISBN: {isbn}</div>
+        <div className="bg-yellow-800 rounded-2xl p-3 mt-3">
+          <div>Name: {title}</div> 
+          <div>Author: {author}</div>
+          <div>Publish Year: {publishYear}</div>
+          <div>ISBN: {isbn}</div>
+        </div>
       </div>
     </>
   )
