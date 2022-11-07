@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/swapps-technical-test-api-usage/static/css/main.4998a4d0.css",
-    "main.js": "/swapps-technical-test-api-usage/static/js/main.e74d800a.js",
+    "main.js": "/swapps-technical-test-api-usage/static/js/main.64587a12.js",
     "index.html": "/swapps-technical-test-api-usage/index.html",
     "main.4998a4d0.css.map": "/swapps-technical-test-api-usage/static/css/main.4998a4d0.css.map",
-    "main.e74d800a.js.map": "/swapps-technical-test-api-usage/static/js/main.e74d800a.js.map"
+    "main.64587a12.js.map": "/swapps-technical-test-api-usage/static/js/main.64587a12.js.map"
   },
   "entrypoints": [
     "static/css/main.4998a4d0.css",
-    "static/js/main.e74d800a.js"
+    "static/js/main.64587a12.js"
   ]
 }
