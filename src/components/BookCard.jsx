@@ -1,5 +1,3 @@
-// import useFetchImg from '../hooks/useFetchImg'
-
 const BookCard = ({book}) => {
   
   const title = book.title;
@@ -11,12 +9,15 @@ const BookCard = ({book}) => {
 
   return (
     <>
-      <img src={src} alt="Book cover" loading="lazy" />
-      <div>Name: {title}</div> 
-      <div>Author: {author}</div>
-      <div>Publish Year: {publishYear}</div>
-      <div>ISBN: {isbn}</div>
-      <br/>
+      <div className="container m-2 w-72">
+        <div className="flex justify-center h-40 w-full bg-inherit">
+          <img src={src} alt="Book cover" loading="lazy" />
+        </div>
+        <div>Name: {title}</div> 
+        <div>Author: {author}</div>
+        <div>Publish Year: {publishYear}</div>
+        <div>ISBN: {isbn}</div>
+      </div>
     </>
   )
 }

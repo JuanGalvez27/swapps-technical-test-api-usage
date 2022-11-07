@@ -15,7 +15,7 @@ function Main() {
   const data = useMemo(() => {
     if (results?.docs) {
         return results.docs.map((book) => (
-            <li key={book.key}> <BookCard book={book} /> </li>
+            <div key={book.key}> <BookCard book={book} /> </div>
           ));   
     }
   }, [results])
@@ -28,10 +28,10 @@ function Main() {
           <div className=''>
             <SearchInput />
           </div>
-          <div className=' bg-yellow-700 flex items-center justify-center h-full rounded-xl'>
-            <ul>
+          <div className='grid grid-cols-2 bg-yellow-700 items-center justify-center h-full rounded-xl w-10/12'>
+            <div>
               {data}
-            </ul>
+            </div>
           </div>
         </div>
         <Footer />
