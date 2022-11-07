@@ -11,7 +11,6 @@ const useFetchImg = (imgUrl) => {
     const initial  = imgUrl ? imgUrl : def;
 
     const [src, setSrc] = useState(initial)
-   
 
     useEffect(() => {
         const fetchedImg = async () => {

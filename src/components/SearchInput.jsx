@@ -37,18 +37,26 @@ export const SearchInput = () => {
   } 
 
   // ----
-  // lifecycle
-  // ----
-
-  // ----
   // view
   // ----
 
   return (
-    <div>
+    <div className="py-10">
+      <div className="text-2xl mb-2">
+        <h1>¡Search your book by title or author's name!</h1>
+      </div>
       <form onSubmit={handleForm}>
-        <input onChange={handleSearchInput} type="text" placeholder="E.g. Diana Uribe"></input>
-        <button type="submit" >Search</button>
+        <input 
+          onChange={handleSearchInput} 
+          type="text" 
+          placeholder="E.g. Diana Uribe"
+          className="px-14 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"
+        />
+        <button 
+          type="submit" 
+          className="ml-5 py-2 bg-gray-500 px-5 rounded-2xl"
+        >Search
+        </button>
       </form>
     </div>
   )
