@@ -26,27 +26,24 @@ src <br />
 
 ## Architecture
 
-
+![Image text](https://github.com/JuanGalvez27/swapps-technical-test-api-usage/blob/master/docs/diagrams/Architecture.jpeg)
 
 ## Runnign the project.
 
 1) Create a folder on your pc and start a bash console in that directory.
 
-2) Run the following command on the bash:
-git clone https://github.com/JuanGalvez27/swapps-technical-test-api-usage
-
+2) Run the following command on the bash: <br />
+git clone https://github.com/JuanGalvez27/swapps-technical-test-api-usage <br />
 (make sure you have installed GIT)
 
-3) Run the following command:
+3) Run the following command: <br />
   cd ./swapps-technical-test-api-usage
 
-4) Run: npm install
-
-(make sure you have installed node)
+4) Run: npm install <br />
+(make sure you have installed node)<br />
 Wait for the packages instalation.
 
-5) Run: npm start 
-
+5) Run: npm start <br />
 (make sure the port 3000 its free)
 
 ¡Have Fun!
