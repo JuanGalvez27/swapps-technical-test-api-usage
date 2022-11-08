@@ -8,20 +8,20 @@ http://juanGalvez27.github.io/swapps-technical-test-api-usage
 
 ## Folder architecture
 
-src
-|--components/
-|  |--BookCard.jsx
-|  |--Footer.jsx
-|  |--Main.jsx
-|  |--Navbar.jsx
-|  |--SearchInput.jsx
-|--context
-|  |--DataContext.js
-|--hooks
-|  |--useDataFetch.js
-|--App.js
-|--index.css
-|--index.js
+src <br />
+|--components/ <br />
+|  |--BookCard.jsx <br />
+|  |--Footer.jsx <br />
+|  |--Main.jsx <br />
+|  |--Navbar.jsx <br /> 
+|  |--SearchInput.jsx <br />
+|--context <br />
+|  |--DataContext.js <br />
+|--hooks <br />
+|  |--useDataFetch.js <br />
+|--App.js <br />
+|--index.css <br />
+|--index.js <br />
 
 ## Runnign the project.
 
