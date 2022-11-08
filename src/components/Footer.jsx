@@ -1,5 +1,7 @@
 import React from 'react'
-
+/**
+ * Footer with the bio and the LinkedIn
+ */
 const Footer = () => {
   return (
     <div className='bg-yellow-600 text-center text-xs bottom-0 static'>

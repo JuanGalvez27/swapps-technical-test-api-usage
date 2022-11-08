@@ -23,6 +23,11 @@ src <br />
 |--index.css <br />
 |--index.js <br />
 
+
+## Architecture
+
+
+
 ## Runnign the project.
 
 1) Create a folder on your pc and start a bash console in that directory.
