@@ -26,7 +26,7 @@ src <br />
 
 ## Architecture
 
-
+![Image text](https://github.com/JuanGalvez27/swapps-technical-test-api-usage/blob/master/docs/diagrams/Architecture.jpeg)
 
 ## Runnign the project.
 
