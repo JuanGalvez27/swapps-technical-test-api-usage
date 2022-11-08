@@ -28,7 +28,7 @@ src <br />
 
 ![Image text](https://github.com/JuanGalvez27/swapps-technical-test-api-usage/blob/master/docs/diagrams/Architecture.jpeg)
 
-## Runnign the project.
+## Running the project.
 
 1) Create a folder on your pc and start a bash console in that directory.
 
